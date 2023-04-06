@@ -5,15 +5,25 @@ section{
     padding: 1rem;
     background-color:#d0eee4;
     border-radius: 10px;
+    height: 100%;
 }
 h2+div{
     display: grid;
     place-items: center;
     padding: 1rem;
+    min-height: 8rem;
 }
 a{
     text-decoration: none;
 }
 h2{
+    font-size: 1rem;
     color: #424242;
+}
+#app{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 1rem;
+    row-gap: 1rem;
 }

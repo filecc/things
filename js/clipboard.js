@@ -44,4 +44,15 @@ import * as data from "./data.js";
   document.querySelector(".dnsJS").addEventListener("click", () => {
     navigator.clipboard.writeText(data.dnsToggleJS);
   });
+
+   /* Hamburger MENU TOGGLE CLIPBOARD */
+   document.querySelector(".hmCSS").addEventListener("click", () => {
+    navigator.clipboard.writeText(data.hmToggleCSS);
+  });
+  document.querySelector(".hmHTML").addEventListener("click", () => {
+    navigator.clipboard.writeText(data.hmToggleHTML);
+  });
+  document.querySelector(".hmJS").addEventListener("click", () => {
+    navigator.clipboard.writeText(data.hmToggleJS);
+  });
 })();

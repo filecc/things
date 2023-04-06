@@ -32,4 +32,11 @@
   });
   /* /Day/night w/star-clouds  TOGGLE */
 
+   /* Hamburger Menu TOGGLE */
+   document.querySelector(".hamburger").addEventListener("click", function () {
+      document.querySelectorAll('.hm-line').forEach(button => {
+        button.classList.toggle('on');
+      })
+  });
+
 })();

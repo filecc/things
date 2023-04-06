@@ -342,3 +342,78 @@ document.querySelector(".dns-button").addEventListener("click", function () {
 });
 
 `;
+export const hmToggleHTML = `
+<div class="hm-container">
+<div class="hamburger">
+  <div class="hm-line one"></div>
+  <div class="hm-line two"></div>
+  <div class="hm-line three"></div>
+</div>
+`;
+export const hmToggleCSS = `
+:root {
+  /* GENERAL */
+  --width: 6rem;
+  --shadow: 0px 5px 6px -2px rgba(0, 0, 0, 0.1);
+  --radiusContainer: calc((var(--width) * 25) / 100);
+  --radiusToggle: calc((var(--width) * 25) / 100);
+  --toggle: calc(var(--width) * 0.4);
+  --cubic: cubic-bezier(.57, .58, .93, .44);
+  /* THIS TOGGLE */
+
+}
+
+.hm-container {
+  position: relative;
+  width: var(--width);
+  height: var(--width);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hamburger {
+  width: calc(var(--width) / 2);
+  height: calc(var(--width) / 3);
+  display: block;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hm-line {
+  background-color: #121f2b;
+  width: calc((var(--width)) * .5);
+  height: calc((var(--width)) * .04);
+  position: relative;
+  transition: 0.3s ease all;
+  border-radius: 5px;
+}
+
+.hm-line.one.on {
+  position: absolute;
+  transform: rotateZ(45deg);
+ 
+}
+
+.hm-line.two.on {
+ width: 0;
+}
+
+.hm-line.three.on {
+  position: absolute;
+  transform: rotateZ(-45deg);
+
+}
+`;
+export const hmToggleJS = `
+
+document.querySelector(".hamburger").addEventListener("click", function () {
+  document.querySelectorAll('.hm-line').forEach(button => {
+    button.classList.toggle('on');
+  })
+});
+
+`;

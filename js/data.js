@@ -55,8 +55,8 @@ export const iosToggleCSS = `
 export const iosToggleJS = `
 
 const handleClick = function (prefix) {
-  const button = document.querySelector('ios-button');
-  const container = document.querySelector('ios-container');
+  const button = document.querySelector('.ios-button');
+  const container = document.querySelector('.ios-container');
   button.classList.toggle('ios-on');
   container.classList.toggle('ios-container');
 };
@@ -122,8 +122,8 @@ export const adToggleCSS = `
 export const adToggleJS = `
 
 const handleClick = function () {
-  const button = document.querySelector('ad-button');
-  const container = document.querySelector('ad-container');
+  const button = document.querySelector('.ad-button');
+  const container = document.querySelector('.ad-container');
   button.classList.toggle('ad-on');
   container.classList.toggle('ad-container');
 };
@@ -194,8 +194,8 @@ export const dnToggleCSS = `
 export const dnToggleJS = `
 
 const handleClick = function () {
-  const button = document.querySelector('dn-button');
-  const container = document.querySelector('dn-container');
+  const button = document.querySelector('.dn-button');
+  const container = document.querySelector('.dn-container');
   button.classList.toggle('dn-on');
   container.classList.toggle('dn-container');
 };
@@ -331,8 +331,8 @@ export const dnsToggleCSS = `
 export const dnsToggleJS = `
 
 const handleClick = function () {
-  const button = document.querySelector('dns-button');
-  const container = document.querySelector('dns-container');
+  const button = document.querySelector('.dns-button');
+  const container = document.querySelector('.dns-container');
   button.classList.toggle('dns-on');
   container.classList.toggle('dns-container');
 };

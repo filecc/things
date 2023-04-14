@@ -212,7 +212,7 @@ export const dnsToggleHTML = `
             <span class="dns-particle second"></span>
             <span class="dns-particle third"></span>
           </span>
-        </div>`;
+ </div>`;
 export const dnsToggleCSS = `
 :root {
     /* GENERAL */
@@ -344,10 +344,11 @@ document.querySelector(".dns-button").addEventListener("click", function () {
 `;
 export const hmToggleHTML = `
 <div class="hm-container">
-<div class="hamburger">
-  <div class="hm-line one"></div>
-  <div class="hm-line two"></div>
-  <div class="hm-line three"></div>
+  <div class="hamburger">
+    <div class="hm-line one"></div>
+    <div class="hm-line two"></div>
+    <div class="hm-line three"></div>
+  </div>
 </div>
 `;
 export const hmToggleCSS = `
